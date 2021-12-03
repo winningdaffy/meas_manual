@@ -5,11 +5,13 @@
 -------------
 
 为保证软件能正常使用，请保证电脑配置不低于以下规格:
-CPU :   2 GHz (双核)
-内存 :   4 GB 
-硬盘空间 :  2 GB (installed)
-网口 :  1 Gb
-操作系统 :  Windows 7 / Windows 10 / Windows 11
+
+- CPU :   2 GHz (双核)
+- 内存 :   4 GB 
+- 硬盘空间 :  2 GB (installed)
+- 网口 :  1 Gb
+- 操作系统 :  Windows 7 / Windows 10 / Windows 11
+
 请保证您的Windows用户账户拥有足够的权限（管理员）。软件在某些情况下需要管理员身份运行, 否则可能无法实现时间同步。
 
 2.2 安装驱动
