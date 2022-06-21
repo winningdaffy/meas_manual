@@ -96,6 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#id2">4.1 建立新试验项目</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">4.2 开始试验</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">4.3 查看数据及修改参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">4.4 记录数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">4.5 查看数据文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">4.6 导出数据</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="005_function_operation.html">5. 软件功能</a></li>
@@ -172,7 +175,7 @@
 <div class="section" id="id2">
 <h2>4.1 建立新试验项目<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ol class="loweralpha simple">
-<li><p>点击 <a class="reference internal" href="003_user_interface.html#tool-bar-tab"><span class="std std-numref">表 1</span></a> 中的 <strong>File</strong> 按钮，如 <a class="reference internal" href="005_function_operation.html#tool-file"><span class="std std-numref">图 13</span></a> ：</p></li>
+<li><p>点击 <a class="reference internal" href="003_user_interface.html#tool-bar-tab"><span class="std std-numref">表 1</span></a> 中的 <strong>File</strong> 按钮，如 <a class="reference internal" href="#tool-file"><span class="std std-numref">图 2</span></a> ：</p></li>
 </ol>
 <div class="figure align-center" id="tool-file">
 <a class="reference internal image-reference" href="_images/tool_file.png"><img alt="_images/tool_file.png" src="_images/tool_file.png" style="width: 600px;" /></a>
@@ -187,11 +190,11 @@
 </div>
 <ol class="loweralpha simple" start="3">
 <li><p>创建试验后可以在 <strong>Experiment</strong> 窗口看到试验包括的内容。</p></li>
-<li><p>如 <code class="xref std std-numref docutils literal notranslate"><span class="pre">add_device</span></code> ，点击 <a class="reference internal" href="003_user_interface.html#tool-bar-tab"><span class="std std-numref">表 1</span></a> 中的 <strong>Experiment</strong> -&gt; <strong>Add Devices</strong> 按钮，打开设备管理窗口。</p></li>
+<li><p>如 <a class="reference internal" href="#img-add-device"><span class="std std-numref">图 4</span></a> ，点击 <a class="reference internal" href="003_user_interface.html#tool-bar-tab"><span class="std std-numref">表 1</span></a> 中的 <strong>Experiment</strong> -&gt; <strong>Add Devices</strong> 按钮，打开设备管理窗口。</p></li>
 </ol>
-<div class="figure align-center" id="add-device">
+<div class="figure align-center" id="img-add-device">
 <a class="reference internal image-reference" href="_images/tool_add_device.png"><img alt="_images/tool_add_device.png" src="_images/tool_add_device.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">图 4 </span><span class="caption-text">点击添加设备按钮</span><a class="headerlink" href="#add-device" title="永久链接至图片">¶</a></p>
+<p class="caption"><span class="caption-number">图 4 </span><span class="caption-text">点击添加设备按钮</span><a class="headerlink" href="#img-add-device" title="永久链接至图片">¶</a></p>
 </div>
 <ol class="loweralpha simple" start="5">
 <li><p>在设备管理窗口中，从设备下拉列表中勾选需要添加的设备，然后点击添加按钮将设备添加到试验，如 <a class="reference internal" href="#check-and-add-device"><span class="std std-numref">图 5</span></a> 所示，一次可以选择多个设备</p></li>
@@ -286,6 +289,92 @@
 <div class="figure align-center" id="img-table-control">
 <img alt="_images/table_control.png" src="_images/table_control.png" />
 <p class="caption"><span class="caption-number">图 12 </span><span class="caption-text">数据选择完成</span><a class="headerlink" href="#img-table-control" title="永久链接至图片">¶</a></p>
+</div>
+<ol class="loweralpha simple" start="4">
+<li><p>如果有实时采集的数据可以打开数据选择窗口，选择数据曲线来查看实时数据</p></li>
+</ol>
+<div class="figure align-center" id="img-select-ch">
+<img alt="_images/frm_data_selector-select_ch.png" src="_images/frm_data_selector-select_ch.png" />
+<p class="caption"><span class="caption-number">图 13 </span><span class="caption-text">选择数据曲线</span><a class="headerlink" href="#img-select-ch" title="永久链接至图片">¶</a></p>
+</div>
+<div class="figure align-center" id="img-measure-time-chart">
+<img alt="_images/measure-time_chart.png" src="_images/measure-time_chart.png" />
+<p class="caption"><span class="caption-number">图 14 </span><span class="caption-text">查看数据曲线</span><a class="headerlink" href="#img-measure-time-chart" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>4.4 记录数据<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>当连接设备具有数据采集功能时，能够将采集的数据实时保存到文件中。
+(a) 设置记录数据参数</p>
+<p>点击 <strong>记录</strong> 按钮，打开记录数据设置工具条，工具条如 <a class="reference internal" href="#img-measure-time-chart"><span class="std std-numref">图 14</span></a> 所示。点击 <strong>模式切换</strong> 开关将记录模式切换到 <strong>时间</strong> 或 <strong>角度</strong> 模式。如果是 <strong>时间</strong> 模式需要设置记录时长；如果是 <strong>角度</strong> 模式需要设置 <strong>预触发循环数</strong> 和 <strong>记录循环数</strong> 。 <strong>预触发循环数</strong> 表示在点击记录时刻前的循环数， <strong>记录循环数</strong> 表示保存到数据文件中的总循环数。
+修改后的数据记录参数会保存到试验中，不需要每次设置。</p>
+<div class="figure align-center" id="img-tool-record-01">
+<img alt="_images/tool_record_01.png" src="_images/tool_record_01.png" />
+<p class="caption"><span class="caption-number">图 15 </span><span class="caption-text">显示数据记录参数</span><a class="headerlink" href="#img-tool-record-01" title="永久链接至图片">¶</a></p>
+</div>
+<ol class="loweralpha simple" start="2">
+<li><p>记录数据</p></li>
+</ol>
+<p>切换到 <strong>测试</strong> 工具条，点击 <strong>记录</strong> 按钮，开始记录数据。同时在软件状态栏会实时显示记录状态，包括是否正在记录和记录的时间或循环数，如 <a class="reference internal" href="#img-measure-time-chart"><span class="std std-numref">图 14</span></a> 所示。</p>
+<div class="figure align-center" id="img-status-bar-record">
+<img alt="_images/status_bar-record.png" src="_images/status_bar-record.png" />
+<p class="caption"><span class="caption-number">图 16 </span><span class="caption-text">数据记录状态</span><a class="headerlink" href="#img-status-bar-record" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>4.5 查看数据文件<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ol class="loweralpha simple">
+<li><p>停止测试</p></li>
+</ol>
+<p>查看数据文件时需要首先停止测试</p>
+<ol class="loweralpha simple" start="2">
+<li><p>打开试验窗口</p></li>
+</ol>
+<p>点击侧边栏的 <strong>试验窗口</strong> 按钮，如 <a class="reference internal" href="#img-experiment-panel"><span class="std std-numref">图 17</span></a> 所示，打开试验窗口。</p>
+<div class="figure align-center" id="img-experiment-panel">
+<img alt="_images/experiment_panel.png" src="_images/experiment_panel.png" />
+<p class="caption"><span class="caption-number">图 17 </span><span class="caption-text">打开试验窗口</span><a class="headerlink" href="#img-experiment-panel" title="永久链接至图片">¶</a></p>
+</div>
+<ol class="loweralpha simple" start="3">
+<li><p>打开文件</p></li>
+</ol>
+<p>双击需要打开的文件，文件名前的图标变为打开状态，如 <a class="reference internal" href="#img-file-open-state"><span class="std std-numref">图 18</span></a> 所示。</p>
+<div class="figure align-center" id="img-file-open-state">
+<img alt="_images/file_open_state.png" src="_images/file_open_state.png" />
+<p class="caption"><span class="caption-number">图 18 </span><span class="caption-text">打开文件</span><a class="headerlink" href="#img-file-open-state" title="永久链接至图片">¶</a></p>
+</div>
+<ol class="loweralpha simple" start="4">
+<li><p>查看数据</p></li>
+</ol>
+<p>点击 <strong>新布局</strong> 按钮新建一个显示布局，点击 <strong>选择数据</strong> 打开数据选择窗口，在左侧选择数据文件。如 <a class="reference internal" href="#img-frm-data-selector-from-file"><span class="std std-numref">图 19</span></a> 所示。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>点击数据名称可以切换选择状态，加粗为选择状态</p></li>
+<li><p>按 <strong>Shift</strong> 可以进行多选</p></li>
+<li><p>使用右键菜单选择 <strong>Add to New</strong> 将数据添加到选中控件中</p></li>
+<li><p>使用右键菜单选择 <strong>Add to Exist</strong> 将数据添加到现有控件中</p></li>
+<li><p>也可以使用工具条按钮数据、过滤数据</p></li>
+<li><p>数据选择窗口可以进行多次选择</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="img-frm-data-selector-from-file">
+<img alt="_images/frm_data_selector_from_file.png" src="_images/frm_data_selector_from_file.png" />
+<p class="caption"><span class="caption-number">图 19 </span><span class="caption-text">选择文件中的数据</span><a class="headerlink" href="#img-frm-data-selector-from-file" title="永久链接至图片">¶</a></p>
+</div>
+<div class="figure align-center" id="img-data-of-file">
+<img alt="_images/data_of_file.png" src="_images/data_of_file.png" />
+<p class="caption"><span class="caption-number">图 20 </span><span class="caption-text">文件中的数据</span><a class="headerlink" href="#img-data-of-file" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>4.6 导出数据<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<ol class="loweralpha simple">
+<li><p>打开试验窗口</p></li>
+<li><p>在文件上点击右键，选择 <strong>Export to CSV</strong> 将数据导出为csv文件，如 <a class="reference internal" href="#img-export-to-csv"><span class="std std-numref">图 21</span></a> 所示。</p></li>
+</ol>
+<div class="figure align-center" id="img-export-to-csv">
+<img alt="_images/export_to_csv.png" src="_images/export_to_csv.png" />
+<p class="caption"><span class="caption-number">图 21 </span><span class="caption-text">文件中的数据</span><a class="headerlink" href="#img-export-to-csv" title="永久链接至图片">¶</a></p>
 </div>
 </div>
 </div>

@@ -4,12 +4,12 @@
 5.1 新建试验
 --------------
 
-点击 :numref:`tool_bar_tab` 中的 **文件** 按钮，如 :numref:`tool_file` 所示：
+点击 :numref:`tool_bar_tab` 中的 **文件** 按钮，如 :numref:`img-new_experiment-no_select` 所示：
 
 .. figure:: /images/new_experiment-no_select.png
     :width: 600px
     :align: center
-    :name: tool_file 
+    :name: img-new_experiment-no_select
 
     新建试验
 

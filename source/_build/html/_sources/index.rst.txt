@@ -15,6 +15,7 @@ MEAS软件使用手册
    004_quick_start.rst
    005_function_operation.rst
    006_python_api.rst
+   007_reference.rst
 
 
 附录及索引

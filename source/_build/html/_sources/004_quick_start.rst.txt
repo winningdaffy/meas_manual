@@ -22,12 +22,12 @@
     新建试验项目
 
 (c) 创建试验后可以在 **Experiment** 窗口看到试验包括的内容。
-(d) 如 :numref:`add_device` ，点击 :numref:`tool_bar_tab` 中的 **Experiment** -> **Add Devices** 按钮，打开设备管理窗口。
+(d) 如 :numref:`img-add_device` ，点击 :numref:`tool_bar_tab` 中的 **Experiment** -> **Add Devices** 按钮，打开设备管理窗口。
 
 .. figure:: /images/tool_add_device.png
     :width: 600px
     :align: center
-    :name: add_device 
+    :name: img-add_device 
 
     点击添加设备按钮
 
@@ -121,3 +121,107 @@
 
     数据选择完成
 
+(d) 如果有实时采集的数据可以打开数据选择窗口，选择数据曲线来查看实时数据
+
+.. figure:: /images/frm_data_selector-select_ch.png
+    :align: center
+    :name: img_select_ch
+
+    选择数据曲线
+
+
+.. figure:: /images/measure-time_chart.png
+    :align: center
+    :name: img_measure-time_chart
+
+    查看数据曲线
+
+4.4 记录数据
+--------------------------
+
+当连接设备具有数据采集功能时，能够将采集的数据实时保存到文件中。
+(a) 设置记录数据参数
+
+点击 **记录** 按钮，打开记录数据设置工具条，工具条如 :numref:`img_measure-time_chart` 所示。点击 **模式切换** 开关将记录模式切换到 **时间** 或 **角度** 模式。如果是 **时间** 模式需要设置记录时长；如果是 **角度** 模式需要设置 **预触发循环数** 和 **记录循环数** 。 **预触发循环数** 表示在点击记录时刻前的循环数， **记录循环数** 表示保存到数据文件中的总循环数。
+修改后的数据记录参数会保存到试验中，不需要每次设置。
+
+.. figure:: /images/tool_record_01.png
+    :align: center
+    :name: img_tool_record_01
+
+    显示数据记录参数
+
+(b) 记录数据
+
+切换到 **测试** 工具条，点击 **记录** 按钮，开始记录数据。同时在软件状态栏会实时显示记录状态，包括是否正在记录和记录的时间或循环数，如 :numref:`img_measure-time_chart` 所示。
+
+.. figure:: /images/status_bar-record.png
+    :align: center
+    :name: img_status_bar_record
+
+    数据记录状态
+
+
+4.5 查看数据文件
+--------------------------
+(a) 停止测试
+
+查看数据文件时需要首先停止测试
+
+(b) 打开试验窗口
+
+点击侧边栏的 **试验窗口** 按钮，如 :numref:`img_experiment_panel` 所示，打开试验窗口。
+
+.. figure:: /images/experiment_panel.png
+    :align: center
+    :name: img_experiment_panel
+
+    打开试验窗口
+
+(c) 打开文件
+
+双击需要打开的文件，文件名前的图标变为打开状态，如 :numref:`img_file_open_state` 所示。
+
+.. figure:: /images/file_open_state.png
+    :align: center
+    :name: img_file_open_state
+
+    打开文件
+
+
+(d) 查看数据
+
+点击 **新布局** 按钮新建一个显示布局，点击 **选择数据** 打开数据选择窗口，在左侧选择数据文件。如 :numref:`img_frm_data_selector_from_file` 所示。
+
+    - 点击数据名称可以切换选择状态，加粗为选择状态
+    - 按 **Shift** 可以进行多选
+    - 使用右键菜单选择 **Add to New** 将数据添加到选中控件中
+    - 使用右键菜单选择 **Add to Exist** 将数据添加到现有控件中
+    - 也可以使用工具条按钮数据、过滤数据
+    - 数据选择窗口可以进行多次选择
+
+.. figure:: /images/frm_data_selector_from_file.png
+    :align: center
+    :name: img_frm_data_selector_from_file
+
+    选择文件中的数据
+
+
+.. figure:: /images/data_of_file.png
+    :align: center
+    :name: img_data_of_file
+
+    文件中的数据
+
+
+4.6 导出数据
+--------------------------------
+
+(a) 打开试验窗口
+(b) 在文件上点击右键，选择 **Export to CSV** 将数据导出为csv文件，如 :numref:`img_export_to_csv` 所示。
+
+.. figure:: /images/export_to_csv.png
+    :align: center
+    :name: img_export_to_csv
+
+    文件中的数据
