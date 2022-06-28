@@ -71,11 +71,12 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     # 'pointsize': '10pt',
 
+    'geometry': r'\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}',
+
     # Additional stuff for the LaTeX preamble.
     # 'preamble': '',
     'preamble': r''',
 
-    'geometry': r' \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}',
 
 \hypersetup{unicode=true}
 \usepackage{CJKutf8}
