@@ -247,6 +247,64 @@ dev_disable_calibration
 
     - 无返回值
 
+dev_set_channel_parameter
+--------------------------
+控制设备设置通道配置参数，例如输入信号类型，输入信号量程
+
+(a) 参数
+
+    - 设备名称，字符串
+    - 设备序列号，整数
+    - 通道号，整数，从1开始
+    - 通道参数名称，字符串
+    - 通道参数数值，字符串
+
+(b) 返回值
+
+    - 无返回值
+
+
+
+.. csv-table:: 3027通道参数名称及数值
+    :header: "参数名称", "参数值"
+
+    "function", "func_volt_n10_p10"
+    ,			"func_iepe"
+    ,			"func_curr"
+    ,			"func_rtd"
+    ,			"func_tc"
+    ,			"func_bridge"
+    ,			"func_cal_v_1d4"
+    ,			"func_cal_v_2"
+    ,			"func_cal_v_8"
+    ,			"func_cal_curr"
+    ,			"func_cal_iepe"
+    ,			"func_cal_diff_x1"
+    ,			"func_cal_diff_x2"
+    ,			"func_cal_diff_x10"
+    ,			"func_cal_diff_x50"
+    ,			"func_cal_diff_x100"
+    ,			"func_cal_rtd"
+    ,			"func_cal_amb"
+    ,			"func_cal_tc"
+    "voltage_range","range_n10v_p10v"
+    ,			"range_n1v_p1v"
+    ,			"range_n100mv_p100mv"
+    "rtd_type", "rtd_2l_4l_pt100"
+    ,			"rtd_3l_pt100"
+    ,			"rtd_2l_4l_pt1000"
+    ,			"rtd_3l_pt1000"
+    "tc_type",	"tc_k"
+    ,			"tc_t"
+    ,			"tc_j"
+    "bridge_type","bridge_2x"
+    ,			"bridge_10x"
+    ,			"bridge_50x"
+    ,			"bridge_100x"
+
+
+
+
 es1501_set_voltage
 -----------------------
 控制ES1501输出设定电压(此电压是标称电压，实际输出电压可能与此电压不同)
